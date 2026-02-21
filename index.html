@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortfolio | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">DevPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero">
+        <h1>Hi, I'm <span class="highlight">Alex</span></h1>
+        <p>Full-Stack Developer & UI Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I build scalable web applications with a focus on clean code and user experience.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div id="project-grid" class="grid">
+            <p class="loading">Loading projects...</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Get In Touch</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="form-status"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
